@@ -2,8 +2,9 @@
 Создать телеграм бот который читает данные из файла 'kloop.json'
 И отправляет их к пользователю
 
-Скинуть мне ссылку на телеграм бота для теста
+Ссылка на бот - https://t.me/adilTeamBot
 """
+
 
 from aiogram import Bot, executor, types,Dispatcher
 from bs4 import BeautifulSoup
