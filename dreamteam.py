@@ -69,13 +69,24 @@
 # print(a[0],a[1],a[2],a[3])
 
 #7
+def get_pairs(iterable):
+    final = []
+    for i in range(0, len(iterable), 2):
+        final.append((iterable[i], iterable[i + 1]))
+    return final
+
+pairs = {}
+keys_values = ('one', 1, 2, 'two', 3, 'three', 'four', 4, 'five', 5, 6, 'six', 7, 'seven', 'eight', 8, 'nine',9, 10, 'ten', 11, '11', 12 ,'13')
+
+for (e1, e2) in get_pairs(keys_values):
+    if type(e1) is str:
+        pairs[e1] = e2
+    else:
+        pairs[e2] = e1
+
+print(pairs)
 
 
-
-# keys_values = ('one', 1, 2, 'two', 3, 'three', 'four', 4, 'five', 5, 6 ,'six', 7, 'seven', 'eight', 8, 'nine',9, 10, 'ten', 11, '11', 12 ,'13')
-# pairs = {}
-
-# print(keys_values)
     
 
 
